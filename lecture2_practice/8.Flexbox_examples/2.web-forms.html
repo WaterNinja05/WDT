@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+          display: flex;
+          align-items: flex-end;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+        .name {
+          flex-grow: 1;
+          flex-basis: 120px;
+        }
+        .email {
+          flex-grow: 3;
+          flex-basis: 170px;
+        }
+        button {
+          flex-grow: 1;
+          flex-basis: 70px;
+        }
+
+
+
+        /* Cosmetic styles */
+form {
+  padding: 8px;
+  border: 1px solid hsl(0deg 0% 50%);
+}
+
+label {
+  font-weight: 500;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 4px;
+}
+button {
+  height: 2.5rem;
+}
+
+      </style>
+</head>
+<body>
+    
+      <form>
+        <label class="name" for="name-field">
+          Name:
+          <input id="name-field" />
+        </label>
+        <label
+          class="email"
+          for="email-field"
+        >
+          Email:
+          <input
+            id="email-field"
+            type="email"
+          />
+        </label>
+        <button>
+          Submit
+        </button>
+      </form>
+      
+</body>
+</html>
